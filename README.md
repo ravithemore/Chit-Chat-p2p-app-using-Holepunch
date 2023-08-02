@@ -1,6 +1,8 @@
-# README
+# P2P - CHAT APP REACT APP using HOLEPUNCH
 
-Chat App built with React and HolePunch
+P2P Chat App is a lightweight, easy-to-use React app that allows you to chat with friends and family in real time. With This app, you can create a private chat room or join an existing one, send text messages, photos, and videos, and even make voice calls.
+
+This app is built using the Holepunch platform, which is a secure, reliable, and scalable platform for building P2P chat apps. This app is easy to use, even for users with no prior experience with React apps.
 
 ### What is this repository for?
 
