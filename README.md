@@ -1,28 +1,45 @@
-# P2P - CHAT APP REACT APP using HOLEPUNCH
+# P2P - CHAT APP REACT APP using HOLEPUNCH💻🤹‍♂️
 
-P2P Chat App is a lightweight, easy-to-use React app that allows you to chat with friends and family in real time. With This app, you can create a private chat room or join an existing one, send text messages, photos, and videos, and even make voice calls.
+P2P Chat App is a lightweight, easy-to-use React app that allows you to chat with friends and family in real time. With This app, you can create a private chat room or join an existing one, send text messages, photos, and videos, and even make voice calls.📲
 
-This app is built using the Holepunch platform, which is a secure, reliable, and scalable platform for building P2P chat apps. This app is easy to use, even for users with no prior experience with React apps.
-
-### What is this repository for?
-
-- 1. To use Hyperswarm (DHT)
-- 2. To integrate the React and Hyperswarm
-- 3. Git repo (https://github.com/holepunchto/hyperswarm-dht-relay)
+This app is built using the Holepunch platform, which is a secure, reliable, and scalable platform for building P2P chat apps. This app is easy to use, even for users with no prior experience with React apps.📞📱
 
 ### How to run
+Open Command Centre and run this Command.
+Clone this Repo using this command.
+``` Git Clone```
+After Cloning this app, Use this command to install all the dependencies in your environment
+```npm install```
+Then simply run this command
+``` npm start```
 
-- 1. Git Clone
-- 2. npm install
-- 3. npm start
+### Tech Stacks:
+- Front-end: React.js.
+- Back-end: Node.js.
 
-### Why do we need relay?
 
-Hyperswarm works in the browser, but browsers can't do P2P, that is why we need a Relay.
+### Why do we need a relay?
 
-### Implmentaion
 
-- 1. Create DHT instance.
+A relay in P2P apps is a server that sits between two users and relays messages between them. This is necessary for a number of reasons, including:
+
+- Security: A relay can help to protect the privacy of users by encrypting messages before they are sent. This prevents third parties from eavesdropping on the conversation.
+- Scalability: A relay can help to scale P2P apps by distributing the load of messages across multiple servers. This can prevent individual servers from becoming overloaded.
+- Reliability: A relay can help to improve the reliability of P2P apps by providing a backup path for messages. If one server goes down, the relay can still relay messages between the two users.
+
+In some cases, a relay may not be necessary. For example, if two users are on the same network, they can communicate directly with each other without a relay. However, in most cases, a relay is a valuable addition to a P2P app.
+
+Here are some additional benefits of using a relay in P2P apps:
+
+- Firewall traversal: A relay can help users to bypass firewalls that may block direct P2P connections.
+- NAT traversal: A relay can help users to connect to each other even if they are behind NAT routers.
+- Bandwidth sharing: A relay can help to share bandwidth between users, which can improve performance for everyone.
+
+Overall, a relay can be a valuable addition to any P2P app. It can help to improve security, scalability, reliability, firewall traversal, NAT traversal, and bandwidth sharing.
+
+### Implementation
+
+- 1. Create a DHT instance.
 
 ```
 import b4a from 'b4a'
@@ -63,3 +80,15 @@ swarm.on('connection', function (socket, info) {
 const topic = b4a.alloc(32).fill("game-room-002"); // + custom room name, prefix + hash it
 swarm.join(topic);
 ```
+
+## Contributing🤝❤️
+
+We are always looking for ways to improve This App, and we welcome your contributions! If you have any ideas, bug fixes, or feature suggestions, please let us know by opening an issue or submitting a pull request. Your feedback is important to us, and we appreciate your help in making This App the best it can be.
+
+## Acknowledgments 🙏🌟
+
+This app would not be possible without the foundational technologies provided by the creators of Node.js, React, WebRTC, and Holepunch. We are grateful for their contributions, and we would like to thank them for building the shoulders upon which we stand.
+
+## Contact📧📞
+
+For any questions or inquiries about the project, please contact me at damorravi540@gmail.com
