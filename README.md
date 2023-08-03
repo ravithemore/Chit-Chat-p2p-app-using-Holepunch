@@ -39,7 +39,7 @@ Overall, a relay can be a valuable addition to any P2P app. It can help to impro
 
 ### Implementation
 
-- 1. Create a DHT instance.
+- Creating a DHT instance.
 
 ```
 import b4a from 'b4a'
@@ -50,19 +50,17 @@ const ws = new WebSocket('wss://dht2-relay.leet.ar')
 const dht = new DHT(new Stream(true, ws))
 ```
 
-Now we are using dht2-relay.leet.ar as a relay, which is not P2P, (this is a limitation from browsers.)
+Currently, due to limitations imposed by web browsers, we are utilizing "dht2-relay.leet.ar" as a relay, which is not a peer-to-peer (P2P) solution.
 
-- 2. Create Hyperswarm
+- Creating Hyperswarm
 
 ```
 import Hyperswarm from 'hyperswarm'
 
-// DHT ...
-
-const swarm = new Hyperswarm({ dht }) // you pass it as an option
+const swarm = new Hyperswarm({ dht }) // here we are passing dht as an option.
 ```
 
-- 3. Handling method Swarm connection
+- We are managing the Swarm connection method.
 
 ```
 swarm.on('connection', function (socket, info) {
@@ -75,7 +73,7 @@ swarm.on('connection', function (socket, info) {
 })
 ```
 
-- 4. Join swarm
+- Joining swarm
 ```
 const topic = b4a.alloc(32).fill("game-room-002"); // + custom room name, prefix + hash it
 swarm.join(topic);
