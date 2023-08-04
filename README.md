@@ -13,10 +13,6 @@ After Cloning this app, Use this command to install all the dependencies in your
 Then simply run this command
 ``` npm start```
 
-### Tech Stacks:
-- Front-end: React.js.
-- Back-end: Node.js.
-
 
 ### Why do we need a relay?
 
